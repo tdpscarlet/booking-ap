@@ -1,0 +1,36 @@
+@use "../../index";
+
+.footer {
+  width: 100%;
+  max-width: 1024px;
+  font-size: 12px;
+}
+
+.fLists {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+  gap: 10px;
+}
+
+.fList {
+  list-style: none;
+  padding: 0;
+  flex: 1;
+}
+
+.fListItem {
+  margin-bottom: 8px;
+  font-size: 13px;
+  color: index.$sub-color;
+  cursor: pointer;
+}
+
+.fListItem:hover {
+  color: #ff8000;
+}
+
+.fText {
+  margin-bottom: 10px;
+}

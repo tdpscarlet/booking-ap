@@ -1,0 +1,89 @@
+@use "../../index";
+@mixin arrow {
+  position: absolute;
+  top: 30%;
+  color: index.$text-gray;
+  background-color: index.$color-white;
+  padding: 11px 14px;
+  border-radius: 100%;
+  font-size: 11px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 8px;
+  cursor: pointer;
+}
+
+.fp {
+  width: 100%;
+  max-width: 1024px;
+  position: relative;
+}
+
+.fpItems {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  overflow: scroll;
+  -ms-overflow-style: none;
+}
+
+.fpItems::-webkit-scrollbar {
+  display: none;
+}
+
+.fpItem {
+  flex: 1;
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.fpImg {
+  width: 100%;
+  border-radius: 2px;
+}
+
+.fpName {
+  font-weight: bold;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 240px;
+  white-space: nowrap;
+}
+
+.fpCity {
+  font-weight: 300;
+}
+
+.fpPrice {
+  font-weight: 500;
+}
+
+.fpRating {
+  display: flex;
+  align-items: center;
+
+  button {
+    background-color: index.$main-color;
+    color: index.$color-white;
+    border: none;
+    padding: 3px;
+    margin-right: 10px;
+    border-radius: 5px 5px 5px 0;
+    cursor: pointer;
+  }
+
+  span {
+    font-size: 13px;
+    font-weight: 400;
+  }
+}
+
+.fpArrowLeft {
+  @include arrow;
+  left: -15px;
+}
+
+.fpArrowRight {
+  @include arrow;
+  right: -15px;
+}

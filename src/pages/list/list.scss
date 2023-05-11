@@ -1,0 +1,90 @@
+@use "../../index";
+
+.listContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.listWrapper {
+  width: 100%;
+  max-width: 1024px;
+  display: flex;
+  gap: 20px;
+}
+
+.listSearch {
+  flex: 1;
+  background-color: index.$color-yellow;
+  padding: 15px;
+  border-radius: 2px;
+  position: sticky;
+  top: 10px;
+  height: fit-content;
+
+  > button {
+    padding: 15px;
+    background-color: index.$sub-color;
+    color: index.$color-white;
+    border: none;
+    width: 100%;
+    border-radius: 2px;
+    cursor: pointer;
+  }
+}
+
+.listResult {
+  flex: 3;
+}
+
+.lsTitle {
+  font-size: 20px;
+  color: index.$color-gray;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.lsItem {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 10px;
+  border-radius: 2px;
+
+  > label {
+    font-size: 12px;
+  }
+
+  > input {
+    height: 40px;
+    border: none;
+    padding: 5px;
+  }
+
+  > span {
+    height: 40px;
+    padding: 5px;
+    background-color: index.$color-white;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 400;
+  }
+}
+
+.lsDate {
+  position: absolute;
+  top: 179px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 15px;
+  z-index: 2;
+}
+
+.lsItemOption {
+  position: absolute;
+  top: 250px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 15px;
+  font-weight: 500;
+  background-color: index.$color-white;
+  z-index: 2;
+}

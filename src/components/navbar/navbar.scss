@@ -1,0 +1,38 @@
+@use "../../index";
+
+.navbar {
+  height: 70px;
+  background-color: index.$main-color;
+  display: flex;
+  justify-content: center;
+}
+
+.navContainer {
+  width: 100%;
+  max-width: 1024px;
+  color: index.$color-white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-weight: 600;
+  font-size: 24px;
+  font-family: Roboto;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.navButton {
+  margin-left: 10px;
+  border: none;
+  padding: 9px 15px;
+  cursor: pointer;
+  color: index.$sub-color;
+  font-weight: 600;
+}
+
+.navButton:hover {
+  background-color: rgba($color: index.$color-white, $alpha: 0.9);
+}
